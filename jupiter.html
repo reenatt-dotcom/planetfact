@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jupiter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body class="jupiter">
+  <header>
+    <h1>Jupiter</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+      <li><a href="neptune.html">Neptune</a></li>
+      <!-- Add more navigation links for other pages -->
+    </ul>
+  </nav>
+  <main>
+    <h2>About Jupiter</h2>
+    <div class="planet-info">
+      <div class="planet-info-box">
+        <h3>Rotation Time</h3>
+        <p>9.9 hours</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Revolution Time</h3>
+        <p>11.9 years</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Radius</h3>
+        <p>69,911 km</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Average Temperature</h3>
+        <p>-108 °C</p>
+      </div>
+    </div>
+    <div class="planet-content">
+      <button class="content-button" onclick="toggleContent('overview')">Overview</button>
+      <button class="content-button" onclick="toggleContent('structure')">Internal Structure</button>
+      <button class="content-button" onclick="toggleContent('geology')">Surface Geology</button>
+      <div id="overview" class="content-section">
+        <h3>Overview</h3>
+        <p>Jupiter is the largest planet in our solar system and is known for its prominent bands and the Great Red Spot.</p>
+      </div>
+      <div id="structure" class="content-section">
+        <h3>Internal Structure</h3>
+        <p>Jupiter has a dense core, surrounded by metallic hydrogen, and an outer layer of molecular hydrogen.</p>
+      </div>
+      <div id="geology" class="content-section">
+        <h3>Surface Geology</h3>
+        <p>Jupiter has a turbulent atmosphere with various cloud bands and storms, including the Great Red Spot.</p>
+      </div>
+    </div>
+    <div class="references">
+      <h3>References</h3>
+      <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank">Wikipedia</a>.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Planet Facts</p>
+  </footer>
+</body>
+</html>

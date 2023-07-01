@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Earth</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body class="earth">
+  <header>
+    <h1>Earth</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+      <li><a href="neptune.html">Neptune</a></li>
+      <!-- Add more navigation links for other pages -->
+    </ul>
+  </nav>
+  <main>
+    <h2>About Earth</h2>
+    <div class="planet-info">
+      <div class="planet-info-box">
+        <h3>Rotation Time</h3>
+        <p>24 hours</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Revolution Time</h3>
+        <p>365.25 days</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Radius</h3>
+        <p>6,371 km</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Average Temperature</h3>
+        <p>14 °C</p>
+      </div>
+    </div>
+    <div class="planet-content">
+      <button class="content-button" onclick="toggleContent('overview')">Overview</button>
+      <button class="content-button" onclick="toggleContent('structure')">Internal Structure</button>
+      <button class="content-button" onclick="toggleContent('geology')">Surface Geology</button>
+      <div id="overview" class="content-section">
+        <h3>Overview</h3>
+        <p>Third planet from the sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
+      </div>
+      <div id="structure" class="content-section">
+        <h3>Internal Structure</h3>
+        <p>Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.</p>
+      </div>
+      <div id="geology" class="content-section">
+        <h3>Surface Geology</h3>
+        <p>Earth's surface is diverse, with mountains, valleys, plains, and bodies of water.</p>
+      </div>
+    </div>
+    <div class="references">
+      <h3>References</h3>
+      <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Earth" target="_blank">Wikipedia</a>.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Planet Facts</p>
+  </footer>
+</body>
+</html>

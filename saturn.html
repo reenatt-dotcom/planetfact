@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saturn</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body class="saturn">
+  <header>
+    <h1>Saturn</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mercury.html">Mercury</a></li>
+      <li><a href="venus.html">Venus</a></li>
+      <li><a href="earth.html">Earth</a></li>
+      <li><a href="mars.html">Mars</a></li>
+      <li><a href="jupiter.html">Jupiter</a></li>
+      <li><a href="saturn.html">Saturn</a></li>
+      <li><a href="uranus.html">Uranus</a></li>
+      <li><a href="neptune.html">Neptune</a></li>
+      <!-- Add more navigation links for other pages -->
+    </ul>
+  </nav>
+  <main>
+    <h2>About Saturn</h2>
+    <div class="planet-info">
+      <div class="planet-info-box">
+        <h3>Rotation Time</h3>
+        <p>10.7 hours</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Revolution Time</h3>
+        <p>29.5 years</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Radius</h3>
+        <p>58,232 km</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Average Temperature</h3>
+        <p>-139 °C</p>
+      </div>
+    </div>
+    <div class="planet-content">
+      <button class="content-button" onclick="toggleContent('overview')">Overview</button>
+      <button class="content-button" onclick="toggleContent('structure')">Internal Structure</button>
+      <button class="content-button" onclick="toggleContent('geology')">Surface Geology</button>
+      <div id="overview" class="content-section">
+        <h3>Overview</h3>
+        <p>Saturn is a gas giant known for its distinctive rings made up of ice particles and dust.</p>
+      </div>
+      <div id="structure" class="content-section">
+        <h3>Internal Structure</h3>
+        <p>Saturn has a dense core of rock and metal surrounded by layers of hydrogen and helium.</p>
+      </div>
+      <div id="geology" class="content-section">
+        <h3>Surface Geology</h3>
+        <p>Saturn's atmosphere features various cloud bands and storms, while its rings consist of icy particles and debris.</p>
+      </div>
+    </div>
+    <div class="references">
+      <h3>References</h3>
+      <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Wikipedia</a>.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Planet Facts</p>
+  </footer>
+</body>
+</html>

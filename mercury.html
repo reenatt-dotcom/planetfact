@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mercury</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body class="mercury">
+  <header>
+    <h1>Mercury</h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mercury.html">Mercury</a></li>
+        <li><a href="venus.html">Venus</a></li>
+        <li><a href="earth.html">Earth</a></li>
+        <li><a href="mars.html">Mars</a></li>
+        <li><a href="jupiter.html">Jupiter</a></li>
+        <li><a href="saturn.html">Saturn</a></li>
+        <li><a href="uranus.html">Uranus</a></li>
+        <li><a href="neptune.html">Neptune</a></li>
+      <!-- Add more navigation links for other pages -->
+    </ul>
+  </nav>
+  <main>
+    <h2>About Mercury</h2>
+    <div class="planet-info">
+      <div class="planet-info-box">
+        <h3>Rotation Time</h3>
+        <p>58.6 days</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Revolution Time</h3>
+        <p>88 days</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Radius</h3>
+        <p>2,439.7 km</p>
+      </div>
+      <div class="planet-info-box">
+        <h3>Average Temperature</h3>
+        <p>167 °C</p>
+      </div>
+    </div>
+    <div class="planet-content">
+      <button class="content-button" onclick="toggleContent('overview')">Overview</button>
+      <button class="content-button" onclick="toggleContent('structure')">Internal Structure</button>
+      <button class="content-button" onclick="toggleContent('geology')">Surface Geology</button>
+      <div id="overview" class="content-section">
+        <h3>Overview</h3>
+        <p>Mercury is the smallest and closest planet to the Sun. It is a rocky planet with a cratered surface.</p>
+      </div>
+      <div id="structure" class="content-section">
+        <h3>Internal Structure</h3>
+        <p>Mercury has a solid, iron-rich core and a thin rocky mantle.</p>
+      </div>
+      <div id="geology" class="content-section">
+        <h3>Surface Geology</h3>
+        <p>Mercury's surface is heavily cratered and has extensive plains and cliffs.</p>
+      </div>
+    </div>
+    <div class="references">
+      <h3>References</h3>
+      <p>Information sourced from <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a>.</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Planet Facts</p>
+  </footer>
+</body>
+</html>
