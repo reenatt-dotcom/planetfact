@@ -6,3 +6,5 @@ function toggleContent(sectionId) {
     document.getElementById(sectionId).style.display = "block";
   }
   
+
+  
