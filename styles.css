@@ -1,149 +1,151 @@
 html {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
-    text-align: center;
-  }
-  
-  body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Lighter semi-transparent background color */
-    pointer-events: none;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  
-  nav {
-    background-color: #f4f4f4;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-  }
-  
-  main {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    margin-top: auto;
-  }
-  
-  body.home {
-    background-image: url('images/solarsystem.jpg');
-  }
-  
-  body.mercury {
-    background-image: url('images/mercury.jpg');
-  }
-  
-  body.venus {
-    background-image: url('images/venus.jpg');
-  }
-  
-  /* Add similar styles for other pages */
-  body.mars {
-    background-image: url('images/mars.png');
-  }
+  height: 100%;
+}
 
-  body.earth {
-    background-image: url('images/earth.jpg');
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
+  text-align: center;
+  overflow: hidden; /* Prevent content from overflowing outside the rounded corners */
+}
 
-  body.jupiter {
-    background-image: url('images/jupiter.webp');
-  }
+body::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent black background color */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
 
-  body.saturn {
-    background-image: url('images/saturn.jpg');
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 
-  body.uranus {
-    background-image: url('images/uranus.jpg');
-  }
+nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
 
-  body.neptune {
-    background-image: url('images/neptune.jpg');
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
-  .planet-info {
-    display: flex;
-  }
-  
-  .planet-info-box {
-    flex: 1;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    margin: 10px;
-  }
-  
-  .planet-info-box h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .planet-info-box p {
-    font-size: 16px;
-  }
-  
-  .content-button {
-    margin: 10px;
-    padding: 8px 16px;
-    font-size: 16px;
-  }
-  
-  .content-section {
-    display: none;
-    margin-top: 20px;
-  }
-  
-  .planet-content {
-    margin-top: 40px;
-  }
-  
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+body.home {
+  background-image: url('images/solarsystem.jpg');
+}
+
+body.mercury {
+  background-image: url('images/mercury.jpg');
+}
+
+body.venus {
+  background-image: url('images/venus.jpg');
+}
+
+/* Add similar styles for other pages */
+body.mars {
+  background-image: url('images/mars.png');
+}
+
+body.earth {
+  background-image: url('images/earth.jpg');
+}
+
+body.jupiter {
+  background-image: url('images/jupiter.webp');
+}
+
+body.saturn {
+  background-image: url('images/saturn.jpg');
+}
+
+body.uranus {
+  background-image: url('images/uranus.jpg');
+}
+
+body.neptune {
+  background-image: url('images/neptune.jpg');
+}
+
+.planet-info {
+  display: flex;
+}
+
+.planet-info-box {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 10px;
+}
+
+.planet-info-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.planet-info-box p {
+  font-size: 16px;
+}
+
+.content-button {
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.content-section {
+  display: none;
+  margin-top: 20px;
+}
+
+.planet-content {
+  margin-top: 40px;
+}
