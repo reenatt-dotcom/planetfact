@@ -34,10 +34,6 @@ We welcome contributions! If you'd like to help improve the site or add new cont
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute!
 
-## Contact
-
-For questions or feedback, please contact us at [your-email@example.com].
-
 ---
 
 Enjoy exploring the wonders of our solar system and learning about the incredible planets that inhabit it!
